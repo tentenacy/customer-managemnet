@@ -1,6 +1,8 @@
 #ifndef __CUSTOMER_H__
 #define __CUSTOMER_H__
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #define MAX_SIZE_CUSTOMER 1000
 #define MAX_SIZE_STRING_CUSTOMER 20
 

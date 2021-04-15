@@ -1,6 +1,8 @@
 #ifndef __MINIGAME_MAP_H__
 #define __MINIGAME_MAP_H__
 
+#define _CRT_SECURE_NO_WARNINGS
+
 int*** maps;
 int map_size;
 int* row_sizes;

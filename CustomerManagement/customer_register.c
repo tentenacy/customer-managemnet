@@ -23,10 +23,13 @@ void register_customer_user_input(Customer * cus) {
 	input_informations(me_name, &me_age, me_number, "손님 정보 등록");
 	uid_customer += 1;
 	register_customer(uid_customer, me_name, me_age, me_number, 0, "-", cus);
-	FILE* fcus;
-	if (fopen_s(&fcus, "customer.txt", "a") == 0) {
+	FILE* fcus = NULL;
+	FILE* fhist = NULL;
+	if (fopen_s(&fcus, "customer.txt", "a") == 0 && fopen_s(&fhist, "history_purchase.txt", "a") == 0) {
 		fprintf(fcus, "%d %d %s %d %s %s\n", uid_customer, 0, me_name, me_age, me_number, "-");
+		fprintf(fhist, "");
 		fclose(fcus);
+		fclose(fhist);
 		show_box(success_register_customer);
 		printf("\n");
 	}

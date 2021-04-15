@@ -1,6 +1,8 @@
 #ifndef __DATETIME_H__
 #define __DATETIME_H__
 
+#define _CRT_SECURE_NO_WARNINGS
+
 #define MAX_SIZE_STRING_DATETIME 20
 
 char current_datetime[MAX_SIZE_STRING_DATETIME];
